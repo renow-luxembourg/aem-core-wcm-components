@@ -87,4 +87,11 @@ public interface Navigation extends Component {
     default String getAccessibilityLabel() {
         return null;
     }
+
+    /**
+     * Name of the resource / configuration policy property that defines if the accessibility label should be displayed as heading
+     * The property should provide a Boolean value. When this value property is set to {@code true}, the accessibility label will be displayed.
+     *
+     */
+    String PN_DISPLAY_ACCESSIBILITY_LABEL = "displayAccessibilityLabel";
 }

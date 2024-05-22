@@ -201,6 +201,10 @@ public class NavigationImpl extends AbstractComponentImpl implements Navigation 
         return this.accessibilityLabel;
     }
 
+    public boolean getDisplayAccessibilityLabel() {
+        return properties.get(PN_DISPLAY_ACCESSIBILITY_LABEL, currentStyle.get(PN_DISPLAY_ACCESSIBILITY_LABEL, true));
+    }
+
     @NotNull
     @Override
     public String getExportedType() {
@@ -284,5 +288,4 @@ public class NavigationImpl extends AbstractComponentImpl implements Navigation 
     private boolean currentPageIsRedirectTarget(@NotNull final Page page) {
         return currentPage.equals(Utils.resolveRedirects(page).getLeft());
     }
-
 }

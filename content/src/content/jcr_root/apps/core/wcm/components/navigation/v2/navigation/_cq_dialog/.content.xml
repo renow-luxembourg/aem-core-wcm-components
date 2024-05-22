@@ -130,6 +130,15 @@
                                                 fieldLabel="Label"
                                                 name="./accessibilityLabel"
                                                 value=""/>
+											<displayAccessibilityLabel
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                fieldDescription="Display the accessibility Label as an H2 heading"
+                                                text="Display Accessibility Label as heading"
+                                                name="./displayAccessibilityLabel"
+                                                value="{Boolean}true"
+                                                checked="${not empty cqDesign.displayAccessibilityLabel ? cqDesign.displayAccessibilityLabel : false}"
+                                                uncheckedValue="{Boolean}false"/>
                                         </items>
                                     </column>
                                 </items>
