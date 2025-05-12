@@ -44,4 +44,14 @@ public interface Tabs extends PanelContainer {
     default String getAccessibilityLabel() {
         return null;
     }
+
+    /**
+     * Returns the tabs orientation.
+     *
+     * @return the tablist orientation : vertical or horizontal
+     * @since com.adobe.cq.wcm.core.components.models XXXXX
+     */
+    default String getOrientation() {
+        return null;
+    }
 }

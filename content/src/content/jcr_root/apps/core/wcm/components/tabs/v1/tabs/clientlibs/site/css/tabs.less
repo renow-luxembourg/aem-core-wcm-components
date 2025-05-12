@@ -16,10 +16,19 @@
 
 .cmp-tabs__tablist {
     display: flex;
-    overflow: auto hidden;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     padding-left: 0;
     list-style: none;
+}
+
+.cmp-tabs__tablist.cmp-tabs__tablist_horizontal{
+    overflow: auto hidden;
+    flex-wrap: nowrap;
+}
+
+.cmp-tabs__tablist.cmp-tabs__tablist_vertical{
+    overflow: hidden auto;
+    flex-direction: column
 }
 
 .cmp-tabs__tab {

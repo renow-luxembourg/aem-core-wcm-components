@@ -55,4 +55,17 @@ public class TabsImpl extends AbstractPanelContainerImpl implements Tabs {
     public String getAccessibilityLabel() {
         return this.accessibilityLabel;
     }
+
+    /**
+     * The orientation.
+     */
+    @ValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    @Nullable
+    private String orientation;
+
+    @Override
+    @Nullable
+    public String getOrientation() {
+        return this.orientation;
+    }
 }

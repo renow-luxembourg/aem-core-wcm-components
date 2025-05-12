@@ -75,6 +75,22 @@
                                                 fieldLabel="ID"
                                                 name="./id"
 												validation="html-unique-id-validator"/>
+                                            <orientation
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                fieldDescription="Orientation of the tablist element. The default value for a tablist element is horizontal."
+                                                fieldLabel="Tablist orientation">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <horizontal
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Horizontal"
+                                                        value="horizontal"/>
+                                                    <vertical
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Vertical"
+                                                        value="vertical"/>
+                                                </items>
+                                            </orientation>
                                         </items>
                                     </column>
                                 </items>
